@@ -1,0 +1,81 @@
+.about
+	margin-bottom: 95px
+
+	@media screen and (max-width: 768px)
+		margin-bottom: 10px
+	
+	&__left
+		padding-left: 0
+
+		@media  screen and (max-width: 992px)
+			padding-left: 15px
+
+	&__right
+		padding:
+			right: 0
+			left: 0
+
+		img
+			width: 100%
+			height: auto
+
+		@media  screen and (max-width: 992px)
+			margin: 50px auto
+			padding-right: 15px
+			padding-left: 15px
+			max-width: 600px
+
+	& h2
+		margin: 0
+		margin-top: -5px
+		margin-bottom: 20px
+		display: block
+		font-size: $def-size * 3 - 8
+
+		&::after
+			content: ""
+			margin-top: 25px
+			display: block
+			width: 80px
+			border-bottom: 1px solid $dark-grey
+
+	& p 
+		margin-bottom: 20px
+
+	&__tel
+		margin-bottom: 30px
+		display: inline-block
+		font-size: $def-size + 8
+		color: $blue-default
+
+	& .btn.btn-default.about__btn
+		padding: 10px 15px
+		display: block
+		max-width: 150px
+		font-family: 'Montserrat Light', 'Arial', sans-serif
+		white-space: normal
+
+	& .media
+		position: relative
+		width: 100%
+		height: auto
+
+		& h4
+			position: absolute
+			right: 40px
+			bottom: 30px
+			color: $white
+			font-size: $def-size + 6
+			line-height: $def-line-height + 6
+
+
+
+
+
+
+
+
+
+
+
+

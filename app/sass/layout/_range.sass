@@ -1,0 +1,136 @@
+.range
+	margin-bottom: 100px
+	padding:
+		top: 80px
+		bottom: 85px
+	background-image: url("../img/backgrounds/bg-middle.png")
+
+	&__wrap
+		padding: 0
+
+	&__head
+		margin-bottom: 25px
+
+		& h2
+			margin: 0
+			margin-bottom: 20px
+			font-size: $def-size * 3 - 8
+			text-align: center
+
+			&::after
+				content: ""
+				margin: 0 auto
+				margin-top: 25px
+				display: block
+				width: 85px
+				text-align: center
+				border-bottom: 1px solid $dark-grey
+
+		& p 
+			margin: 0 auto
+			max-width: 630px
+			text-align: center
+
+	&__owl-carousel
+		position: relative
+		margin-bottom: 55px
+
+	&__media
+		position: relative
+		max-width: 270px
+		height: auto
+
+		&:hover .range__product-description
+			top: 30%
+			transition: 0.5s all ease
+
+			.btn.btn-default.range__btn
+				opacity: 1
+				transition: 0.5s all ease
+
+	&__product-description
+		position: absolute
+		top: 42%
+		right: 10px
+		left: 10px
+		text-align: center
+		transition: 0.5s all ease
+
+	&__product-name
+		color: $white
+		font-size: $def-size + 6
+		line-height: $def-line-height + 6
+
+	&__price
+		display: block
+		margin-bottom: 10px
+		color: $white
+		font-size: $def-size * 2 - 4
+		font-family: 'Montserrat Light', 'Arial', sans-serif
+
+	& .btn.btn-default.range__btn
+		opacity: 0
+		padding: 10px 20px
+		color: $blue-default
+		background-color: $white
+		cursor: pointer
+		transition: 0.5s all ease
+
+	& .owl-prev,
+	& .owl-next
+		position: absolute
+		top: 43%
+		left: -50px
+		display: block
+		width: 40px
+		height: 40px
+		color: transparent
+		border: 1px solid $blue-default
+		border-radius: 50%
+
+		@media screen and (max-width: 1300px)
+			top: auto
+			bottom: -50px
+			left: 5px
+
+		@media screen and (max-width: 768px)
+			display: none
+
+		&::after
+			content: ""
+			position: absolute
+			top: 15px
+			left: 15px
+			display: block
+			width: 10px
+			height: 10px
+			border:
+				top: 1px solid $blue-default
+				right: 1px solid $blue-default
+			transform: rotate(-135deg)
+
+	& .owl-next
+		left: auto
+		right: -50px
+
+		@media screen and (max-width: 1200px)
+			right: 5px
+
+		&::after
+			right: 15px
+			left: auto
+			transform: rotate(45deg)
+
+	&__bottom-btn-wrap
+		text-align: center
+
+	& .btn.btn-default.range__bottom-btn
+		padding: 10px 15px
+		display: inline-block
+		max-width: 150px
+		font-family: 'Montserrat Light', 'Arial', sans-serif
+		white-space: normal
+
+
+
+

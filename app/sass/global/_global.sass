@@ -1,0 +1,44 @@
+html,
+body
+	width: 100%
+	min-width: 320px
+	height: 100%
+	font-size: $def-size
+	line-height: $def-line-height
+	font-family: 'Montserrat Bold', 'Arial', sans-serif
+
+	h2
+		color: $blue-default
+
+	p 
+		font-family: 'Hind', 'Arial', sans-serif
+		color: $dark-grey
+
+	.btn.btn-default,
+	.btn.btn-success
+
+		&:focus
+				outline: none
+
+		&:active
+			color: $blue-default
+			background-color: $white
+
+		& span
+			display: block
+
+			&:hover
+				border-bottom: 1px solid $white
+
+
+	.btn.btn-default
+		color: $white
+		font-family: 'Montserrat', 'Arial', sans-serif
+		border: none
+		background:
+			color: $blue-default
+			image: none
+
+	.btn.btn-success
+		background-image: none
+		border: none

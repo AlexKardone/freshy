@@ -1,4 +1,160 @@
-header
-	width: 100%
-	height: 100px
-	background: black
+.page-header
+	margin: 0
+	margin-bottom: 130px
+	padding-top: 20px
+	color: $white
+	border: none
+	background:
+		color: $blue-default
+		image: url('../img/backgrounds/bg-top.jpg')
+
+	@media (max-width: 992px)
+		margin-bottom: 50px
+
+	@media (max-width: 992px)
+  	.navbar-header 
+    	float: none
+    
+  	.navbar-left,.navbar-right 
+    	float: none !important
+    
+  	.navbar-toggle 
+    	display: block
+    
+  	.navbar-collapse 
+    	border-top: 1px solid transparent
+    	box-shadow: inset 0 1px 0 rgba(255,255,255,0.1)
+    
+  	.navbar-fixed-top 
+    	top: 0;
+    	border-width: 0 0 1px
+    
+  	.navbar-collapse.collapse 
+    	display: none!important
+    
+  	.navbar-nav 
+    	float: none!important
+    	margin-top: 7.5px
+    
+  	& > li 
+    		float: none
+    
+  	& > li > a 
+    		padding-top: 10px
+    		padding-bottom: 10px
+    
+  	.collapse.in
+    	display:block !important
+    
+
+	& .nav.navbar-nav.navbar-right a
+		color: $white
+
+	&__left
+		padding-left: 0
+		@media screen and (max-width: 992px)
+			padding:
+				left: 20px
+				right: 15px
+	
+	&__navbar
+    background:
+    	image: none
+    	color: transparent
+    border: none
+    box-shadow: none
+
+	& &__navbar-brand
+		margin-right: 15px
+		padding:
+			top: 20px
+			right: 0
+			bottom: 2px
+			left: 0
+		display: inline-block
+		color: $white
+		font-size: $def-size * 2 - 3
+
+		&:hover
+			color: $white
+			border-bottom: 1px solid $white
+
+		&:visited
+			color: $white
+
+		@media screen and (max-width: 992px)
+			font-size: $def-size * 1.3
+
+	&__navbar-collapse
+		padding-right: 0
+
+	&__container
+		padding-right: 0
+
+	&__navbar-right
+		margin-top: 5px
+		padding: 0
+
+		&:last-child
+			margin-right: 0
+
+		& li a
+			margin-right: 25px
+			padding:
+				right: 0
+				bottom: 0
+				left: 0
+			display: inline-block
+			font-family: 'Montserrat', 'Arial', sans-serif
+
+			&:hover
+				border-bottom: 1px solid $white
+
+			@media screen and (max-width: 992px)
+				margin-right: 15px
+
+	& &__navbar-btn
+		color: $white
+		font-family: 'Montserrat', 'Arial', sans-serif
+		border: none
+		background:
+			color: $blue-default
+			image: none
+
+		&:focus
+				outline: none
+
+		&:active
+				background-color: $white
+
+		& span
+			display: block
+
+			&:hover
+				border-bottom: 1px solid $white
+
+	&__title
+		margin:
+			top: 135px
+			bottom: 195px
+
+	& h1
+		font-size: $def-size * 5 + 8
+		line-height: $def-line-height * 5
+		letter-spacing: 15px
+
+	& p
+		color: $white
+		font-size: $def-size * 2 - 6
+		line-height: $def-line-height * 1.1
+		letter-spacing: 5px
+
+
+
+
+
+
+
+
+
+
