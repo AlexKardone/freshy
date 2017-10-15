@@ -46,7 +46,7 @@
 						        <li><a href="#">ASORTYMENT</a></li>
 						        <li><a href="#">WSPÓŁPRACA</a></li>
 						        <li><a href="#">KONTAKT</a></li>
-						        <li><button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#callBackModal" data-whatever="@mdo"><span>TEL. 500 110 110</span></button></li>
+						        <li><button type="button" class="btn btn-default navbar-btn navbar-btn--page-header" data-toggle="modal" data-target="#callBackModal" data-whatever="@mdo"><span>TEL. 500 110 110</span></button></li>
 						      </ul>
 						    </div><!-- /.navbar-collapse -->
 						  </div><!-- /.container-fluid -->
@@ -192,6 +192,85 @@
 			</ul>
 		</div>
 
+		<div class="contacts">
+			<div class="contacts__left">
+				<div class="media contacts__map">
+					<a href="#">
+						<img class="media-object" src="img/backgrounds/bg-map.png" width="100%" alt="Map">
+					</a>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-7">
+						<div class="contacts__block">
+							<h3>KONTAKT</h3>
+							<p>Masz pytanie? Skontaktuj się z nami! Jeśli masz jakieś pytania możesz się z nami skontaktować za pośrednictwem poniższego formularza kontaktowego, telefonicznie lub mailowo. Zachęcamy do składania zamówień poprzez umieszczony powyżej formularz zamówienia.</p>
+							<button type="button" class="btn btn-default navbar-btn navbar-btn--page-contacts" data-toggle="modal" data-target="#messageModal" data-whatever="@mdo"><span>KONTAKT</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<footer class="page-footer">
+			<div class="page-footer__top">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3">
+							<b class="page-footer__subtitle">O NAS</b>
+							<ul>
+								<li>O nas</li>
+								<li>Asortyment</li>
+								<li>Współpraca</li>
+								<li>Kontakt</li>
+							</ul>
+						</div>
+						<div class="col-sm-3">
+							<b class="page-footer__subtitle">WSPÓŁPRACA</b>
+							<ul>
+								<li>Warunki współpracy</li>
+								<li>Cennik</li>
+								<li>Umowy</li>
+								<li>Dostawy</li>
+							</ul>
+						</div>
+						<div class="col-sm-3">
+							<b class="page-footer__subtitle">GODZINY OTWARCIA</b>
+							<ul>
+								<li><b>Pon. - Wt.</b> 6:00 - 19:00</li>
+								<li><b>Śr. - Pt.</b> 6:00 - 18:00</li>
+								<li><b>Sobota</b> 6:00 - 16:00</li>
+								<li><b>Niedziela i święta</b> 7:00 - 14:00</li>
+							</ul>
+						</div>
+						<div class="col-sm-3">
+							<b class="page-footer__subtitle">KONTAKT</b>
+							<ul>
+								<li>ul. Upalna 99</li>
+								<li>15-600 Białystok</li>
+								<li>tel. <b>500 110 110</b></li>
+								<li>e-mail <b>sklep@swiezeryby.com</b></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page-footer__bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3">
+							<span>Ⓒ SWIEZERYBY.COM 2016</span>
+						</div>
+						<div class="col-sm-1 col-sm-offset-8">
+							<span>W GÓRĘ</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
  
 
 
@@ -213,6 +292,37 @@
 		          <div class="form-group">
 		            <label for="message-text" class="control-label">Twoje imię:</label>
 		            <input type="text" class="form-control" id="recipient-name" placeholder="Iwan Iwanow">
+		          </div>
+		        </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
+		        <button type="button" class="btn btn-success">Wyślij wiadomość</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="modal fade call-back-modal" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="messageModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="messageModalLabel">Zamów oddzwonienie</h4>
+		      </div>
+		      <div class="modal-body">
+		        <form>
+		          <div class="form-group">
+		            <label for="recipient-name" class="control-label">Imię i nazwisko (wymagane):</label>
+		            <input type="text" class="form-control" id="recipient-phone" placeholder="Iwan Iwanow">
+		          </div>
+		          <div class="form-group">
+		            <label for="recipient-name" class="control-label">Adres email (wymagane)</label>
+		            <input type="text" class="form-control" id="recipient-email" placeholder="example@example.pl">
+		          </div>
+		          <div class="form-group">
+		            <label for="message-text" class="control-label">Treść wiadomości:</label>
+		            <textarea class="form-control" id="message-text"></textarea>
 		          </div>
 		        </form>
 		      </div>

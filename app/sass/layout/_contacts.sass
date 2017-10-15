@@ -1,0 +1,85 @@
+.contacts
+	position: relative
+	min-height: 534px
+	color: $white
+	background-color: $blue-lighter
+
+	@media screen and (max-width: 1200px)
+		min-height: 502px
+
+	@media screen and (max-width: 992px)
+		min-height: auto
+
+	& p 
+		color: $white
+
+	&__left
+		position: static
+		padding-left: 0
+
+		@media screen and (max-width: 1200px)
+			display: none
+
+	&__map
+		position: absolute
+		top: 0
+		left: 0
+		cursor: pointer
+
+		@media screen and (max-width: 1200px)
+			position: static
+
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			display: block
+			background-color: $blue-lighter
+			opacity: 0.6
+
+		&:hover::after
+			display: none
+
+	&__block
+		padding:
+			top: 135px
+			bottom: 20px
+		text-align: right
+
+		@media screen and (max-width: 992px)
+			padding-top: 40px
+
+		& h3
+			margin: 0
+			margin-bottom: 20px
+			font-size: $def-size * 2 + 6
+
+			&::after
+				content: ''
+				margin-top: 25px
+				margin-right: 0
+				margin-left: auto
+				display: block
+				width: 100px
+				border-bottom: 1px solid $white
+
+		& p 
+			margin: 0
+			margin-bottom: 25px
+
+		& .btn.btn-default.navbar-btn.navbar-btn--page-contacts
+			padding: 10px 20px
+			color: $blue-default
+			background-color: $white
+
+
+
+
+
+
+
+
+
