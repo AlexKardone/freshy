@@ -9,12 +9,14 @@ var gulp 				= require('gulp'),
 		imagemin		= require('gulp-imagemin'),
 		pngquant		= require('imagemin-pngquant'),
 		cache				= require('gulp-cache'),
-		autoprefixer = require('gulp-autoprefixer');
+		autoprefixer = require('gulp-autoprefixer'),
+		gcmq 				= require('gulp-group-css-media-queries');
 
 gulp.task('sass', function() {
 	return gulp.src('app/sass/**/*.+(scss|sass)')
 			.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
 			.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+			.pipe(gcmq())
 			.pipe(gulp.dest('app/css'))
 			.pipe(browserSync.reload({stream: true}))
 });
