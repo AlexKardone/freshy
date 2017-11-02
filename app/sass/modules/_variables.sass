@@ -1,10 +1,18 @@
-// color
-$white: #fff
-$dark-grey: #737373
-$light-grey: #fcfcfc
-$blue-default: #00a1eb
-$blue-lighter: #2eb2ef
+// sizes
+$dfz: 18px
 
-// font-size
-$def-size: 14px
-$def-line-height: 21px
+// colors
+$dfc: #767676
+$fcprice: #444444
+$formlc: #535353
+$bghead: #dcdcdc
+$bgfooter: #777777
+$bgarrows: #d2d2d2
+$bdc: #c3c3c3
+
+// mixins
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+@mixin animation-duration($ad)
+	animation-duration: $ad + px

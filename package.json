@@ -1,21 +1,21 @@
 {
-  "name": "freshy",
+  "name": "seven-winds",
   "version": "1.0.0",
-  "description": "seafood site",
+  "description": "testwork for a job",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexKardone/freshy.git"
+    "url": "git+https://github.com/AlexKardone/seven_winds.git"
   },
   "author": "Alexander Matskevich",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AlexKardone/freshy/issues"
+    "url": "https://github.com/AlexKardone/seven_winds.git"
   },
-  "homepage": "https://github.com/AlexKardone/freshy#readme",
+  "homepage": "https://github.com/AlexKardone/seven_winds.git",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",

@@ -1,0 +1,65 @@
+.content
+	.categories
+		margin-bottom: 110px
+		@media only screen and (max-width: 768px)
+			margin-bottom: 20px
+		ul,
+		li 
+			margin: 0
+			padding: 0
+			line-height: 1.5
+			a 
+				color: $dfc
+		ul
+			list-style: none
+			+kerning(1)
+		ul:nth-child(2)
+			margin-bottom: 10px
+			padding-left: 20px
+			font-size: $dfz - 4
+			list-style-type: disc
+			li 
+				a.active
+						color: #000
+		.sub-item
+			display: none
+		.active
+			text-decoration: underline
+	.price
+		margin-left: 20px
+		@media only screen and (max-width: 768px)
+			margin-bottom: 20px
+			margin-left: 0
+		a 
+			display: inline-block
+			color: $fcprice
+			font-size: $dfz * 1.6
+			font-weight: 700
+			&::before
+				content: ''
+				margin: 0 auto
+				margin-bottom: 15px
+				display: block
+				width: 97px
+				height: 95px
+				background-image: url("../img/sprite.png")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

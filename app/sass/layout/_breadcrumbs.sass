@@ -1,0 +1,38 @@
+.breadcrombs
+	padding: 5px 15px
+	margin-bottom: 20px
+	ul,
+	li 
+		margin: 0
+		padding: 0
+	ul
+		list-style: none
+		font-size: 0
+	li 
+		position: relative
+		margin-right: 5px
+		font-size: $dfz - 4
+		display: inline-block
+		&::after
+			content: "/"
+			margin-left: 5px
+			display: inline-block
+		&:last-child::after
+			display: none
+		a 
+			color: $dfc
+			text-decoration: underline
+			+kerning(1)
+			&.active
+				pointer-events: none
+				text-decoration: none
+		    cursor: default
+		    color: #999
+
+
+
+
+
+
+
+

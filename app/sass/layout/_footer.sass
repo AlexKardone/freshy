@@ -1,32 +1,51 @@
-.page-footer
-	color: $dark-grey
-
-	&__top
-		padding: 65px 0 60px
-
-	&__subtitle
-		margin:
-			top: 10px
-			bottom: 25px
-		display: block
-		font-family: 'Montserrat', 'Arial', sans-serif
-		font-size: $def-size * 2 - 6
-
-	& ul
-		font-family: 'Hind', 'Arial', sans-serif
+.footer
+	color: #fff
+	font-size: $dfz - 4
+	font-weight: 400
+	background-color: #767676
+	&-row
+		padding: 45px 0
+		.copyright,
+		.menu
+			@media only screen and (max-width: 768px)
+				margin-bottom: 30px
+	ul,
+	li
 		margin: 0
 		padding: 0
+	ul
 		list-style: none
+	li 
+		margin-bottom: 10px
+		a 
+			color: #fff
+			text-decoration: underline
+	.creator-logo,
+	.creator-name
+		display: inline-block
+		vertical-align: top
+	.creator-logo
+		margin-right: 5px
+	.creator-name
+		a 
+			color: #fff
+			text-decoration: underline
 
-		& li 
-			margin-bottom: 5px
 
-	&__bottom
-		padding: 50px 0
-		color: $white
-		font-family: 'Montserrat Light', 'Arial', sans-serif
-		background-color: $dark-grey
 
-		& span
-			display: inline-block
-			margin-bottom: 20px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,160 +1,155 @@
-.page-header
-	margin: 0
-	margin-bottom: 130px
-	padding-top: 20px
-	color: $white
-	border: none
-	background:
-		color: $blue-default
-		image: url('../img/backgrounds/bg-top.jpg')
-
-	@media (max-width: 992px)
-		margin-bottom: 50px
-
-	@media (max-width: 992px)
-  	.navbar-header 
-    	float: none
-    
-  	.navbar-left,.navbar-right 
-    	float: none !important
-    
-  	.navbar-toggle 
-    	display: block
-    
-  	.navbar-collapse 
-    	border-top: 1px solid transparent
-    	box-shadow: inset 0 1px 0 rgba(255,255,255,0.1)
-    
-  	.navbar-fixed-top 
-    	top: 0;
-    	border-width: 0 0 1px
-    
-  	.navbar-collapse.collapse 
-    	display: none!important
-    
-  	.navbar-nav 
-    	float: none!important
-    	margin-top: 7.5px
-    
-  	& > li 
-    		float: none
-    
-  	& > li > a 
-    		padding-top: 10px
-    		padding-bottom: 10px
-    
-  	.collapse.in
-    	display:block !important
-    
-
-	& .nav.navbar-nav.navbar-right a
-		color: $white
-
+.header
+	margin: 40px 0 60px
+	background-color: $bghead
 	&__left
-		padding-left: 0
-		@media screen and (max-width: 992px)
-			padding:
-				left: 20px
-				right: 15px
-	
-	&__navbar
-    background:
-    	image: none
-    	color: transparent
-    border: none
-    box-shadow: none
-
-	& &__navbar-brand
-		margin-right: 15px
-		padding:
-			top: 20px
-			right: 0
-			bottom: 2px
-			left: 0
+		padding: 40px 0 65px
+		font-size: 0
+		@media only screen and (max-width: 768px)
+			padding-bottom: 0
+		@media only screen and (max-width: 480px)
+			padding: 10px 0 20px
+	&__logo,
+	&__company-name
 		display: inline-block
-		color: $white
-		font-size: $def-size * 2 - 3
-
-		&:hover
-			color: $white
-			border-bottom: 1px solid $white
-
-		&:visited
-			color: $white
-
-		@media screen and (max-width: 992px)
-			font-size: $def-size * 1.3
-
-	&__navbar-collapse
-		padding-right: 0
-
-	&__container
-		padding-right: 0
-
-	&__navbar-right
-		margin-top: 5px
-		padding: 0
-
-		&:last-child
-			margin-right: 0
-
-		& li a
-			margin-right: 25px
-			padding:
-				right: 0
-				bottom: 0
-				left: 0
-			display: inline-block
-			font-family: 'Montserrat', 'Arial', sans-serif
-
-			&:hover
-				border-bottom: 1px solid $white
-
-			@media screen and (max-width: 992px)
-				margin-right: 15px
-
-	& .navbar-btn--page-header
-		margin-bottom: 0
-
-	& &__navbar-btn
-		color: $white
-		font-family: 'Montserrat', 'Arial', sans-serif
-		border: none
-		background:
-			color: $blue-default
-			image: none
-
-		&:focus
-				outline: none
-
-		&:active
-				background-color: $white
-
-		& span
+		vertical-align: top
+		@media only screen and (max-width: 480px)
 			display: block
+	&__logo
+		margin-right: 15px
+		@media only screen and (max-width: 480px)
+			margin-right: 0
+			width: 30%
+		img
+			@media only screen and (max-width: 480px)
+				width: 90%
+				height: auto
 
+	&__company-name
+		h1,
+		p
+			margin: 0
+		h1
+			margin-top: 8px
+			font-size: $dfz * 1.7
+			line-height: 0.8
+			font-weight: 700
+			+kerning(1)
+			margin-bottom: 15px
+			@media only screen and (max-width: 320px)
+				font-size: $dfz * 1.3
+		p 
+			font-size: $dfz / 1.2
+			@media only screen and (max-width: 320px)
+				font-size: $dfz / 1.8
+	&__phone
+		padding: 20px 0 60px
+		text-align: right
+		@media only screen and (max-width: 768px)
+			padding-bottom: 10px
+			text-align: center
+		@media only screen and (max-width: 480px)
+			text-align: left
+		p 
+			font-size: $dfz * 2 + 4
+			line-height: 0.8
+			font-weight: 100
+			font-family: 'Open Sans Condensed', sans-serif
+			+kerning(1.3)
+			@media only screen and (max-width: 320px)
+				font-size: $dfz * 1.5
+		&--last
+			margin-bottom: 15px
+		a 
+			display: inline-block
+			color: $dfc
+			font-size: $dfz + 6
+			line-height: 1
+			border-bottom: 2px dashed $dfc
+			+kerning(1)
 			&:hover
-				border-bottom: 1px solid $white
+				text-decoration: none
 
-	&__title
-		margin:
-			top: 135px
-			bottom: 195px
+$w: 50px
+$h: 4px
 
-	& h1
-		font-size: $def-size * 5 + 8
-		line-height: $def-line-height * 5
-		letter-spacing: 15px
+.sandwich-wrap
+	position: fixed
+	top: 10px
+	right: 10px
+	bottom: 0
+	z-index: 100
+	display: none
+	width: $w + 10
+	height: $w + 10
+	background-color: $dfc
+	cursor: pointer
+	@media only screen and (max-width: 768px)
+		display: block
+.sandwich 
+  width: $w + 5
+  height: $w
+  position: absolute
+  top: 17px
+  left: 0
+  right: 0
+  margin: auto
+  margin-right: 0
+.sw-topper
+    position: relative
+    top: 0
+    width: $w 
+    height: $h
+    background: rgb(255, 255, 255)
+    border: none;
+    border-radius: 4px 4px 4px 4px
+    transition: transform 0.5s, top 0.2s
+        
+    // transition-delay: 0.2s, 0s;
 
-		@media screen and (max-width: 480px)
-			font-size: $def-size * 2
-			line-height: $def-line-height * 2
+.sw-bottom
+    position: relative
+    width: $w
+    height: $h
+    top: $h * 2
+    
+    background: rgb(255, 255, 255)
+    border: none
+    border-radius: 4px 4px 4px 4px
+    transition: transform 0.5s, top 0.2s
+    transition-delay: 0.2s, 0s 
 
-	& p
-		color: $white
-		font-size: $def-size * 2 - 6
-		line-height: $def-line-height * 1.1
-		letter-spacing: 5px
+.sw-footer
+    position: relative
+    width: $w
+    height: $h
+    top: $h * 4
+    background: rgb(255, 255, 255)
+    border: none
+    border-radius: 4px 4px 4px 4px
+    transition: all 0.5s
+    transition-delay: 0.1s
+
+.sandwich.active 
+  .sw-topper
+    top: 12px
+    transform: rotate(135deg)
+  .sw-bottom
+    top: 8px
+    transform: rotate(-135deg)
+  .sw-footer
+    opacity: 0
+    top: 0
+    transform: rotate(180deg)
+
+
+
+
+
+
+
+
+
+
 
 
 
